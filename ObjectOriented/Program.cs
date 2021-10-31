@@ -16,6 +16,7 @@ namespace ObjectOriented
             ref String refName = ref o.RefReturn();
             refName = "Optimus Prime"; // we are changing output copy 
             o.PrintName();
+            Console.WriteLine("{0} Age:{1}", refName, ObjectOrientedConcepts.Age());
             Console.ReadKey();
         }
     }
