@@ -47,5 +47,13 @@ namespace ObjectOriented
         {
             return 24;
         }
+
+        public static void ParamString(params String[] names)
+        {
+            for (int i = 0; i < names.Length; i++)
+            {
+                Console.WriteLine("Name {0}:{1}", i+1, names[i]);
+            }
+        }
     }
 }

@@ -17,7 +17,6 @@ namespace ObjectOriented
             refName = "Optimus Prime"; // we are changing output copy 
             o.PrintName();
             Console.WriteLine("{0} Age:{1}", refName, ObjectOrientedConcepts.Age());
-            Console.ReadKey();
 
 
 
@@ -96,6 +95,8 @@ namespace ObjectOriented
             System.Console.WriteLine("Total no. of products: " + Product.GetTotalNoOfProducts());  //Output: 3
             System.Console.WriteLine("Category of products: " + Product.CategoryName);  //Output: Electronics
 
+
+            ObjectOrientedConcepts.ParamString("Dharmesh", "Optimus", "Megatron", "Bumble Bee");
             System.Console.ReadKey();
 
         }
