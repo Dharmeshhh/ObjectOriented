@@ -9,12 +9,31 @@ namespace ObjectOriented
         public int sID;
         public string studentName;
         public string studentGrade;
+
+        public static string collegeName;
+        // Static constructor
+        static ObjectOrientedConcepts()
+        {
+            collegeName = "Fanshawe";
+        }
+        
+        //instance constructor
         public ObjectOrientedConcepts(int sID, string studentName, string studentGrade)
         {
             this.sID = sID;
             this.studentName = studentName;
             this.studentGrade = studentGrade;
         }
+
+        public ObjectOrientedConcepts()
+        {
+            this.sID = 11;
+        }
+
+
+
+
+
         public String Name;
         public ObjectOrientedConcepts(String Name) {
             this.Name = Name;
@@ -66,7 +85,7 @@ namespace ObjectOriented
         }
         public void PrintStudent()
         {
-            Console.WriteLine("StudentID: {0}, StudentName: {1}, StudentGrade: {2}", sID, studentName, studentGrade);
+            Console.WriteLine("College: {0}, StudentID: {1}, StudentName: {2}, StudentGrade: {3}", collegeName,sID, studentName, studentGrade);
         }
     }
 }

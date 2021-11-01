@@ -103,9 +103,21 @@ namespace ObjectOriented
             ObjectOrientedConcepts obj2 = new ObjectOrientedConcepts(2, "Optimus111", "B+");
             ObjectOrientedConcepts obj3 = new ObjectOrientedConcepts(3, "Cybertron333", "C+");
 
+            /*Object Initilizer 
+            
+             Initialise the overloaded constructor(without parameter) and thn initialise our custom parameters by this syntax
+             */
+            ObjectOrientedConcepts obj4 = new ObjectOrientedConcepts() {
+            studentName="Megatron",
+            studentGrade="D+"
+            };
+
             obj1.PrintStudent();
             obj2.PrintStudent();
             obj3.PrintStudent();
+            obj4.PrintStudent();
+
+
 
         }
     }
