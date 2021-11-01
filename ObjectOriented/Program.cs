@@ -115,6 +115,7 @@ namespace ObjectOriented
             obj1.PrintStudent();
             obj2.PrintStudent();
             obj3.PrintStudent();
+            // Object Initilizer instance
             obj4.PrintStudent();
 
 
