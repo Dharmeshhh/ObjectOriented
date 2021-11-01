@@ -99,6 +99,14 @@ namespace ObjectOriented
             ObjectOrientedConcepts.ParamString("Dharmesh", "Optimus", "Megatron", "Bumble Bee");
             System.Console.ReadKey();
 
+            ObjectOrientedConcepts obj1 = new ObjectOrientedConcepts(1, "Dharmesh777", "A+");
+            ObjectOrientedConcepts obj2 = new ObjectOrientedConcepts(2, "Optimus111", "B+");
+            ObjectOrientedConcepts obj3 = new ObjectOrientedConcepts(3, "Cybertron333", "C+");
+
+            obj1.PrintStudent();
+            obj2.PrintStudent();
+            obj3.PrintStudent();
+
         }
     }
 }

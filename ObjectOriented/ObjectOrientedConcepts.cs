@@ -6,6 +6,15 @@ namespace ObjectOriented
 {
     public class ObjectOrientedConcepts
     {
+        public int sID;
+        public string studentName;
+        public string studentGrade;
+        public ObjectOrientedConcepts(int sID, string studentName, string studentGrade)
+        {
+            this.sID = sID;
+            this.studentName = studentName;
+            this.studentGrade = studentGrade;
+        }
         public String Name;
         public ObjectOrientedConcepts(String Name) {
             this.Name = Name;
@@ -54,6 +63,10 @@ namespace ObjectOriented
             {
                 Console.WriteLine("Name {0}:{1}", i+1, names[i]);
             }
+        }
+        public void PrintStudent()
+        {
+            Console.WriteLine("StudentID: {0}, StudentName: {1}, StudentGrade: {2}", sID, studentName, studentGrade);
         }
     }
 }
