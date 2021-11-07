@@ -1,9 +1,15 @@
-﻿public class Employee
+﻿using System;
+public class Employee
 {
     //instance fields
     private int _empID;
     private string _empName;
     private string _job;
+    private long _salary;
+   
+
+    public long Salary { get; set; } = 30000;
+    //public long Salary { get; set; } = 30000;
 
     //instance property
     public int EmpID
@@ -77,3 +83,38 @@
     }
 }
 
+public class Indexer
+{
+    private string[] _roles = new string[] { "CEO", "Manager", "Associate" };
+    private string[] _indexRoles = new string[] { "first", "second", "third" };
+
+    // public indexer standard
+    public string this[int index]
+    {
+        set
+        {
+            this._roles[index] = value;
+        }
+        get
+        {
+            return this._roles[index];
+        }
+
+    }
+
+    //indexer overloading 
+    public string this[string name]
+    {
+        set
+        {
+            this._roles[Array.IndexOf(_indexRoles,name)] = value;
+            //this._indexRoles[index] = value;
+        }
+        get
+        {
+            return this._roles[Array.IndexOf(_indexRoles, name)];
+            //return this._indexRoles[index];
+        }
+
+    }
+}
