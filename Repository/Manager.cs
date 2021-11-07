@@ -1,10 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Repository
+﻿public class Manager : Employees
 {
-    class Manager
+    private string _department;
+    public Manager() { }
+
+    public string Department
     {
+        set
+        {
+            this._department = value;
+        }
+        get
+        {
+            return this._department;
+        }
+    }
+    public long TotalSalesOfTheYear()
+    {
+        return 3000000000;
     }
 }

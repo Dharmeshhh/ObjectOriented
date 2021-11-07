@@ -104,7 +104,7 @@ namespace ObjectOriented
             //ObjectOrientedConcepts obj3 = new ObjectOrientedConcepts(3, "Cybertron333", "C+");
 
             ///*Object Initilizer 
-            
+
             // Initialise the overloaded constructor(without parameter) and thn initialise our custom parameters by this syntax
             // */
             //ObjectOrientedConcepts obj4 = new ObjectOrientedConcepts() {
@@ -152,14 +152,24 @@ namespace ObjectOriented
             //System.Console.ReadKey();
 
 
-            Indexer c = new Indexer();
+            //Indexer c = new Indexer();
 
-            Console.WriteLine(c[0]);
-            c[0] = "Supervisor";
-            Console.WriteLine(c[0]);
-            Console.WriteLine(c["second"]);
-            c["second"] = "Product Manager";
-            Console.WriteLine(c["second"]);
+            //Console.WriteLine(c[0]);
+            //c[0] = "Supervisor";
+            //Console.WriteLine(c[0]);
+            //Console.WriteLine(c["second"]);
+            //c["second"] = "Product Manager";
+            //Console.WriteLine(c["second"]);
+
+            Salesman s = new Salesman();
+
+            s.EmpID = 001;
+            s.EmpName = "Dharmesh";
+            s.EmpLocation = "London, Ontario, Canada";
+            Console.WriteLine("Employee ID: {0}", +s.EmpID);
+            Console.WriteLine("Employee Name: {0}", +s.EmpID);
+            Console.WriteLine("Employee Location: {0}", +s.EmpID);
+            Console.WriteLine("Employee Total Sales: {0}", +s.TotalSalesOfTheMonth());
 
         }
     }
