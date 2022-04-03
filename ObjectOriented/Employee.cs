@@ -5,7 +5,6 @@ public class Employee
     private int _empID;
     private string _empName;
     private string _job;
-    private long _salary;
    
 
     public long Salary { get; set; } = 30000;

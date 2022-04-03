@@ -1,7 +1,8 @@
 ﻿public class Salesman : Employees
 {
     private string _salesmanRegion;
-    public Salesman() { }
+    public Salesman(int salary): base(salary) { 
+    }
 
     public string SalesmanRegion
     {

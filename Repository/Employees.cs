@@ -3,7 +3,10 @@
     private int _empID;
     private string _empName;
     private string _empLocation;
-    public Employees(){}
+    protected int salary;
+    public Employees(int salary){
+        this.salary = salary;
+    }
 
     public int EmpID
     {

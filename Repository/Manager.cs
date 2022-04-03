@@ -1,7 +1,8 @@
 ﻿public class Manager : Employees
 {
     private string _department;
-    public Manager() { }
+    public Manager(int salary):base(salary) {;
+    }
 
     public string Department
     {
@@ -18,4 +19,9 @@
     {
         return 3000000000;
     }
+    public string GetFullDepartmentName()
+    {
+        return Department + " at " + base.EmpLocation;
+    }
+
 }

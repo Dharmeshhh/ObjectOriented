@@ -161,15 +161,19 @@ namespace ObjectOriented
             //c["second"] = "Product Manager";
             //Console.WriteLine(c["second"]);
 
-            Salesman s = new Salesman();
-
+            Salesman s = new Salesman(20000);
+            Manager m = new Manager(10000);
             s.EmpID = 001;
             s.EmpName = "Dharmesh";
             s.EmpLocation = "London, Ontario, Canada";
-            Console.WriteLine("Employee ID: {0}", +s.EmpID);
-            Console.WriteLine("Employee Name: {0}", +s.EmpID);
-            Console.WriteLine("Employee Location: {0}", +s.EmpID);
-            Console.WriteLine("Employee Total Sales: {0}", +s.TotalSalesOfTheMonth());
+            Console.WriteLine(s.EmpID);
+            Console.WriteLine(s.EmpName);
+            Console.WriteLine(s.EmpLocation);
+            //m.EmpID = 001;
+            //m.EmpName = "Dharmesh";
+            m.EmpLocation = s.EmpLocation;
+            m.Department = "Informtion Technology";
+            Console.WriteLine(m.GetFullDepartmentName());
 
         }
     }
